@@ -1,7 +1,9 @@
 <?php
 
-//Réaliser le code php qui permet, grace à PDO, d'intégrer le tableau ci-dessous en base
-// de données.
+/*
+Réaliser le code php qui permet, grace à PDO, d'intégrer
+le tableau ci-dessous en base de données.
+*/
 
 $vinyls = [
     [

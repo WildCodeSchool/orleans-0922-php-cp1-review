@@ -1,15 +1,15 @@
 <?php
 /*
     1/ Créer un formulaire pour renseigner un nouveau vinyl : 
-        - Titre => string de Max 200 caractères - Obligatoire
+        - Titre => string de 200 caractères maximum - Obligatoire
         - Pochette => Url - Obligatoire
-        - Artiste => string de max 200 caractères - Obligatoire
+        - Artiste => string de 200 caractères maximum - Obligatoire
         - Genre => liste déroulante contenant les valeurs : Rock, Classique, Rap, Jazz, Electro, BO de film, Métal, Disco
-        Le formulaire doit envoyer ces informations sur la même page
+        Le formulaire doit envoyer ces informations sur la même page.
     2/ Controle des données saisies : 
-       - vous devez afficher "Bravo le nouveau Vinyl a bien été transmis !" si les données correspondent bien au critères ci-dessus
-       - vous devez affichez "Non essayez encore";
-       - Et si le Genre selectionné est "Disco" vous devez affichez "Merci de bien vouloir brûler ce vinyl et s'il vous plait n'utiliser plus cette plateforme."
+       - Vous devez afficher "Bravo, le nouveau vinyl a bien été transmis !" si les données correspondent bien aux critères ci-dessus.
+       - Sinon, vous devez affichez "Non, essayez encore";
+       - Et si le genre selectionné est "Rap" vous devez afficher "Merci de bien vouloir brûler ce vinyl et, s'il vous plait, n'utilisez plus cette plateforme."
 */
 
 ?>

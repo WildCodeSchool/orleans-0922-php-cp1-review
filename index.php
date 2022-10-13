@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma collection de vinyl !</title>
+    <title>Ma collection de vinyls !</title>
 </head>
 
 <body>
     <header>
         <!--
         - Mobile : 
-            - Doit contenir un titre "Ma collection de vinyl" en Arial de 28px calé sur la gauche
-            - tout le header doit avoir un background Noir et la police doit etre orange
+            - Doit contenir un titre "Ma collection de vinyls" en Arial de 28px calé sur la gauche.
+            - Tout le header doit avoir un background noir et la police doit être orange.
         - Desktop:
-            - Le titre doit se centrer sur la page
-            - juste en dessous doit apparaitre une citation sur la musique
-            - le background doit devenir une photo de vinyl et la police doit repasser en blanc
-            et en Silkscreen (https://fonts.google.com/specimen/Silkscreen)
+            - Le titre doit se centrer sur la page.
+            - Juste en dessous doit apparaître une citation sur la musique.
+            - Le background doit devenir une photo de vinyl et la police doit repasser en blanc
+                et en Silkscreen (https://fonts.google.com/specimen/Silkscreen)
     -->
     </header>
     <nav>
@@ -29,26 +29,26 @@
                 - Ajouter (create.php)
         
         - Desktop : 
-            - Afficher la liste des liens calé à droite de la page
+            - Affichez la liste des liens calée à droite de la page.
     -->
     </nav>
     <main>
         <!--
         - Mobile : 
-           - Présenter dans un cadre un vinyl : avec son titre, sa pochette, 
+           - Présenter dans un cadre un vinyl avec son titre, sa pochette, 
                 et le nom de l'artiste
-           - Présenter au moins 6 vinyl sur la page
+           - Présenter au moins 6 vinyls sur la page.
         
         - Desktop : 
-          - Afficher les même cadre, mais cette trois sur la même ligne
+          - Afficher les mêmes cadres, mais avec cette fois trois sur la même ligne.
     -->
     </main>
     <footer>
         <!--
         - Mobile : 
-          - Ne doit pas apparaitre
+          - Ne doit pas apparaître.
         - Desktop :
-          - doit afficher centrer sur la page, la liste des membres du groupe avec leur noms, email et compte github
+          - Doit afficher, centrée sur la page, la liste des membres du groupe avec leur noms, emails et comptes GitHub.
     -->
     </footer>
 
