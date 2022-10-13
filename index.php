@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <title>Ma collection de vinyls !</title>
 </head>
 
 <body>
     <header>
+        <h1>Ma collection de vinyls</h1>
+        <p>"Ce qu'on ne peut dire et ce qu'on ne peut taire, la musique l'exprime."</p>
         <!--
         - Mobile : 
             - Doit contenir un titre "Ma collection de vinyls" en Arial de 28px calé sur la gauche.
