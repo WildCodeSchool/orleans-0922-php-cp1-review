@@ -1,4 +1,5 @@
 <?php
+
  /*
     1 - Créer une table vinyls en BDD : 
        - id INT clé primaire auto incrémentée
