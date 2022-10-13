@@ -32,8 +32,8 @@ input, select {
 .error{
     background-color: rgb(245, 197, 197);
     color: rgb(241, 2, 2);
-text-align: center;
-width: 50%;
+    text-align: center;
+    width: 50%;
 list-style: none;
 margin: auto;
 
