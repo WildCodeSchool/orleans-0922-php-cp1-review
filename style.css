@@ -1,0 +1,45 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+article {
+    gap: 0;
+}
+
+div {
+    border: 2px ridge darkgray;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 27px;
+    font-style: 
+}
+
+h2 {
+    font-style: italic;
+}
+
+img {
+    margin-block: 16px;
+    width: 300px;
+    height: auto;
+}
+
+
+
+@media screen and (min-width : 834px) {
+ 
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+        margin:0;
+    }
+
+}
