@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma collection de vinyls !</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -33,6 +34,44 @@
     -->
     </nav>
     <main>
+        <section>
+            <article>
+                <div class="row1">
+                    <h1>Only Built 4 Cuban Linx</h1>
+                    <img src="/assets/raekwon.jpeg" alt="vinyl Raekwon">
+                    <h2>Raekwon</h2>
+                </div>
+                <div class="row1">
+                    <h1>3030</h1>
+                    <img src="/assets/3030.jpeg" alt="vinyl 3030">
+                    <h2>Deltron 3030</h2>
+                </div>
+                <div class="row1">
+                    <h1>Abbey Road</h1>
+                    <img src="/assets/beatles.jpeg" alt="vinyl Beatles">
+                    <h2>The Beatles</h2>
+                </div>
+            </article>
+            <article>
+                <div class="row2">
+                    <h1>G-Funk Era</h1>
+                    <img src="/assets/gfunk.jpeg" alt="vinyl Warren G">
+                    <h2>Warren G</h2>
+                </div>
+                <div class="row2">
+                    <h1>Ready To Die</h1>
+                    <img src="/assets/biggie.jpeg" alt="vinyl BIG">
+                    <h2>Notorious BIG</h2>
+                </div>
+                <div class="row2">
+                    <h1>Thriller</h1>
+                    <img src="/assets/mj.jpeg" alt="vinyl MJ">
+                    <h2>Michael Jackson</h2>
+                </div>
+            </article>
+        </section>
+
+
         <!--
         - Mobile : 
            - Présenter dans un cadre un vinyl avec son titre, sa pochette, 

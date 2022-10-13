@@ -1,0 +1,43 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+div {
+    border: 2px groove darkgray;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+img {
+    margin-block: 16px;
+    width: 300px;
+    height: auto;
+}
+
+
+
+@media screen and (min-width : 834px) {
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+}
