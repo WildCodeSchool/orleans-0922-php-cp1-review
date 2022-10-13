@@ -1,0 +1,51 @@
+
+
+
+nav {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    font-family: 'Silkscreen', cursive;
+    justify-content: flex-end;
+}
+
+li a{
+    color: orange;
+    list-style: none;
+    text-decoration: none;
+    font-size: 35px;
+    text-shadow: black 1px 1px;
+}
+
+
+a:hover {
+    color: red;
+    
+}
+
+@media screen and (max-width: 600px){
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        
+        font-size: 10px;
+       
+    }
+
+    li a {
+        font-size: 30px;
+        color: black;
+        text-shadow: orange 1px 1px; 
+        
+    }
+
+    
+}

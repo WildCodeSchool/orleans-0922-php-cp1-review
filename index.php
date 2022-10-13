@@ -2,10 +2,15 @@
 <html lang="en">
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma collection de vinyls !</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,15 +27,12 @@
     -->
     </header>
     <nav>
-        <!--
-        - Mobile : 
-           - la liste (ul) des liens s'affiche en colonne :
-                - Accueil (index.php)
-                - Ajouter (create.php)
-        
-        - Desktop : 
-            - Affichez la liste des liens calée à droite de la page.
-    -->
+        <ul>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="create.php">Ajouter</a></li>
+        </ul>
+
+
     </nav>
     <main>
         <!--
