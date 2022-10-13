@@ -4,16 +4,20 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 40px;
+    gap: 24px;
+}
+article {
+    gap: 0;
 }
 
 div {
-    border: 2px groove darkgray;
+    border: 2px ridge darkgray;
     padding: 20px;
 }
 
 h1 {
     font-size: 27px;
+    font-style: 
 }
 
 h2 {
@@ -29,15 +33,13 @@ img {
 
 
 @media screen and (min-width : 834px) {
+ 
     section {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+        margin:0;
     }
-
-    article {
-        display: flex;
-        flex-direction: row;
-    }
-
-
 
 }
