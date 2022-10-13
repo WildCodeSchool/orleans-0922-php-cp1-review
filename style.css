@@ -1,0 +1,62 @@
+/* RESET */
+
+/* html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  } */
+
+  /* RESET END */
+  
+  body {
+    width:100vw;
+}
+
+.navbar > ul {
+    display:flex;
+    gap: 15px;
+}
+
+.navbar > ul > li{
+    list-style:none;
+}
+
+.vinylsList {
+width:100vw;
+}
+
+.vinylContainer {
+    width: 90%;
+}
+
+.vinylContainer > img {
+    width: 100%;
+}
+
+.footer {
+    display: none
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        display: block;
+    }
+}
