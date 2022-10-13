@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/istockphoto-887280896-1024x1024.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+h1 {
+    text-align: center;
+
+
+}
+
+.rapMessage{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.error{
+    background-color: rgb(245, 197, 197);
+    color: rgb(241, 2, 2);
+text-align: center;
+width: 50%;
+list-style: none;
+margin: auto;
+
+padding-block: 24px;}
+
+.titleAndForm{
+    background-color: white;
+    opacity: 0.8;
+    width: 60%;
+    margin: auto;
+
+    padding-block: 8px;
+    padding-bottom: 16px;
+    border-radius: 4px;
+}
+
+form{
+ 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+label{
+    margin-top: 8px;
+}
+
+    
+
+button{
+    padding-inline: 8px;
+    padding-block: 4px;
+    background-color: rgb(39, 39, 163);
+    color:rgb(224, 236, 247);
+    width: fit-content;
+    border-radius: 4px;
+    border: none;
+    margin-top: 8px;
+font-size: 1.5rem;
+
+}
+
+button:hover{
+    filter: brightness(130%);
+ 
+}
+
+button:active{
+    filter: brightness(80%);
+}

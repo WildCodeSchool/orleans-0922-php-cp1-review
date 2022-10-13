@@ -70,45 +70,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un nouveau vinyl</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Ajoutez un vinyl</h1>
 
-    <?php if (!empty($errors)) {  ?>
-        <ul class="error">
-            <?php foreach ($errors as $error) { ?>
-                <li><?php echo $error; ?></li>
-            <?php } ?>
-        </ul>
-    <?php } ?>
-    <?php    echo $message; ?>
+    <div class="titleAndForm">
+        <h1>Ajoutez un vinyl</h1>
 
-    <form action="" method="POST" novalidate>
-        <label for="title">Titre</label>
-        <input type="text" name="title" id="title" required value="<?= $addVinyl['title'] ?? '' ?>">
+        <?php if (!empty($errors)) {  ?>
+            <ul class="error">
+                <?php foreach ($errors as $error) { ?>
+                    <li><?php echo $error; ?></li>
+                <?php } ?>
+            </ul>
+        <?php } ?>
+        <p class="rapMessage"><?php echo $message; ?></p>
 
-        <label for="cover">Pochette</label>
-        <input type="URL" name="cover" id="cover" required value="<?= $addVinyl['cover'] ?? '' ?>">
+        <form action="" method="POST" novalidate>
+            <label for="title">Titre</label>
+            <input type="text" name="title" id="title" required value="<?= $addVinyl['title'] ?? '' ?>">
 
-        <label for="artist">Artiste</label>
-        <input type="text" name="artist" id="artist" required value="<?= $addVinyl['artist'] ?? '' ?>">
+            <label for="cover">Pochette</label>
+            <input type="URL" name="cover" id="cover" required value="<?= $addVinyl['cover'] ?? '' ?>">
 
-
-        <label for="gender">Choisir un genre:</label>
-        <select name="gender" id="gender" required>
-            <?php foreach ($genders as $genderKey => $genderValue) : ?>
-                <option value="<?= $genderKey ?>" <?php if (isset($addVinyl['gender']) && $addVinyl['gender'] === $genderKey) : ?> selected <?php endif; ?>>
-                    <?= $genderValue ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
-        <button type="submit">Ajoutez</button>
+            <label for="artist">Artiste</label>
+            <input type="text" name="artist" id="artist" required value="<?= $addVinyl['artist'] ?? '' ?>">
 
 
+            <label for="gender">Choisir un genre:</label>
+            <select name="gender" id="gender" required>
+                <?php foreach ($genders as $genderKey => $genderValue) : ?>
+                    <option value="<?= $genderKey ?>" <?php if (isset($addVinyl['gender']) && $addVinyl['gender'] === $genderKey) : ?> selected <?php endif; ?>>
+                        <?= $genderValue ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+            <button type="submit">Ajoutez</button>
 
-    </form>
 
+
+        </form>
+    </div>
 </body>
 
 </html>
