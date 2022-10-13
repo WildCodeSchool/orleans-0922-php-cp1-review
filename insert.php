@@ -3,7 +3,6 @@
 //Réaliser le code php qui permet, grace à PDO, d'intégrer le tableau ci-dessous en base
 // de données.
 
-
 $vinyls = [
     [
         'title' => 'Led Zepplin',
@@ -40,14 +39,3 @@ $vinyls = [
         'genre' => 'Classique',
     ],
 ];
-
-require_once 'function.php';
-
-
-foreach ($vinyls as $vinyl){
-    
-    var_dump($vinyl);
-
-    addVinyl($vinyl);
-
-}
