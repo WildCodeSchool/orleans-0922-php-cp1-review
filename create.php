@@ -12,15 +12,11 @@
        - Et si le genre selectionné est "Rap" vous devez afficher "Merci de bien vouloir brûler ce vinyl et, s'il vous plait, n'utilisez plus cette plateforme."
 */
 
+require "_env.php";
+
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 
-    function sanitize($data)
-    {
-        $data = trim($data);
-        $data = htmlentities($data);
-        return $data;
-    }
-    $data = array_map('sanitize', $_POST);
+    $data = array_map('trim', $_POST);
 
     $validGenres = ['Rock', 'Classique', 'Rap', 'Jazz', 'Electro', 'BO de film', 'Métal', 'Disco'];
 
@@ -48,16 +44,30 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
         $errors[] = "Le genre est invalide.";
 
     if (!empty($errors)) {
-        echo "<h2>Veuillez réessayer :</h2>";
-        foreach ($errors as $error)
+        echo '<div class="errorMessage"><h2>Veuillez réessayer :</h2>';
+        foreach ($errors as $error) {
             echo "<li>" . $error . "</li>";
+        }
+        echo '</div>';
     } else {
-        echo "<h2>Le vinyl a bien été ajouté à votre collection";
-        if ($data['genre'] === 'Disco') {
-            echo ", mais merci de bien vouloir le brûler et ne plus utiliser notre plateforme !</h2>";
+        echo '<h2 class="successMessage">Le vinyl a bien été ajouté à votre collection';
+        if ($data['genre'] === 'Rap') {
+            echo ', mais merci de bien vouloir le brûler et ne plus utiliser notre plateforme !</h2>';
         } else {
             echo '.</h2>';
         }
+
+        $pdo = new PDO(DSN, USER, PASS);
+
+        $query = "INSERT INTO vinyl (title, cover, artist, genre)
+        VALUES (:title, :cover, :artist, :genre);";
+
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':title', $data['title'], PDO::PARAM_STR);
+        $statement->bindValue(':cover', $data['cover'], PDO::PARAM_STR);
+        $statement->bindValue(':artist', $data['artist'], PDO::PARAM_STR);
+        $statement->bindValue(':genre', $data['genre'], PDO::PARAM_STR);
+        $statement->execute();
     }
 }
 ?>
@@ -74,36 +84,39 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 </head>
 
 <body>
-    <h1>Ajouter un nouveau vinyl</h1>
-    <form class="vinylForm" action="" method="post">
-        <div class="formField">
-            <label for="title">Titre :</label>
-            <input type="text" name="title" id="title">
-        </div>
-        <div class="formField">
-            <label for="cover">Pochette :</label>
-            <input type="url" name="cover" id="cover">
-        </div>
-        <div class="formField">
-            <label for="artist">Artiste :</label>
-            <input type="text" name="artist" id="artist">
-        </div>
-        <div class="formField">
-            <label for="genre">Genre :</label>
-            <select name="genre" id="genre">
-                <option value="">--Veuillez choisir un genre--</option>
-                <option value="Rock">Rock</option>
-                <option value="Classique">Classique</option>
-                <option value="Rap">Rap</option>
-                <option value="Jazz">Jazz</option>
-                <option value="Electro">Electro</option>
-                <option value="BO de film">BO de film</option>
-                <option value="Métal">Métal</option>
-                <option value="Disco">Disco</option>
-            </select>
-        </div>
-        <button type="submit">Envoyer</button>
-    </form>
+    <a class="backButton topLeftButton" href="index.php">Retour</a>
+    <div class="addVinyl">
+        <h1>Ajouter un nouveau vinyl</h1>
+        <form class="vinylForm" action="" method="post">
+            <div class="formField">
+                <label for="title">Titre :</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div class="formField">
+                <label for="cover">Pochette :</label>
+                <input type="url" name="cover" id="cover" required>
+            </div>
+            <div class="formField">
+                <label for="artist">Artiste :</label>
+                <input type="text" name="artist" id="artist" required>
+            </div>
+            <div class="formField">
+                <label for="genre">Genre :</label>
+                <select name="genre" id="genre" required>
+                    <option value="">--Veuillez choisir un genre--</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Classique">Classique</option>
+                    <option value="Rap">Rap</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Electro">Electro</option>
+                    <option value="BO de film">BO de film</option>
+                    <option value="Métal">Métal</option>
+                    <option value="Disco">Disco</option>
+                </select>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
 </body>
 
 </html>

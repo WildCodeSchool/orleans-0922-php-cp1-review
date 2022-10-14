@@ -1,4 +1,4 @@
-INSERT INTO vinyls (title, cover, artist, genre) VALUES
+INSERT INTO vinyl (title, cover, artist, genre) VALUES
 ('Led Zepplin', 'https://m.media-amazon.com/images/I/81tDqtyx7yL._AC_SY355_.jpg', 'Led Zepplin', 'Rock'),
 ('Temps mort', 'https://static.fnac-static.com/multimedia/Images/FR/NR/f0/df/33/3399664/1540-1/tsp20170120102315/Temps-mort.jpg', 'Booba', 'Rap'),
 ('Baby Driver', 'https://m.media-amazon.com/images/I/71Nu1BhoHkL._SY355_.jpg', 'Divers', 'BO de film'),
